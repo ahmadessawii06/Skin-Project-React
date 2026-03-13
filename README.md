@@ -117,31 +117,6 @@ npm run dev
 
 ---
 
-# 📦 Build Project
-
-To build the project for production:
-
-```
-npm run build
-```
-
-Preview the build:
-
-```
-npm run preview
-```
-
----
-
-# 🚀 Deployment
-
-The project is deployed using **GitHub Pages**.
-
-```
-npm run deploy
-```
-
----
 
 # 👩‍🏫 Supervisor
 
@@ -151,7 +126,7 @@ npm run deploy
 
 # 👨‍💻 Author
 
-**Ahmed Essawi**
+**Ahmed Essawii**
 
 ---
 
