@@ -1,4 +1,4 @@
-# 🌿 Skin Project React
+# 🌿 SoftSkin Project React
 
 <p align="center">
 
