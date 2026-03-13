@@ -210,18 +210,71 @@ body {
 .footer-links a {
   color: var(--footer-text-muted);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: all 0.4s ease;
   font-size: 0.95rem;
+  position: relative;
+}
+
+.footer-links a:hover {
+  color: #a8c653;
+  padding-left: 5px;
 }
 
 .footer-bottom-links a {
   color: var(--footer-text-muted);
   text-decoration: none;
   margin-left: 10px;
+  transition: all 0.4s ease;
+  position: relative;
 }
 
 .footer-bottom-links a:hover {
+  color: #a8c653;
   text-decoration: underline;
+}
+
+.custom-footer .list-unstyled a {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-footer .list-unstyled a:hover {
+  transform: translateY(-8px);
+  color: #a8c653 !important;
+  filter: drop-shadow(0 8px 16px rgba(168, 198, 83, 0.4));
+}
+
+.custom-footer .text-success {
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(143, 160, 58, 0.2);
+}
+
+.custom-footer .text-success::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #a8c653, #8fa03a);
+  transition: width 0.5s ease;
+}
+
+.custom-footer .text-success:hover {
+  color: #7ec850 !important;
+  text-shadow: 0 0 16px rgba(126, 200, 80, 0.7);
+  letter-spacing: 1px;
+  font-size: 1.05em;
+}
+
+.custom-footer .text-success:hover::after {
+  width: 100%;
 }
 
 @media (max-width: 768px) {
