@@ -1,0 +1,277 @@
+body {
+  font-family: "LATO", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+      overflow-x: hidden;
+}
+
+:root {
+  --green-color: #8fa03a;
+  --white-color: #ffffff;
+  --light-green-color: #f5f7ec;
+}
+
+.navbar {
+  background-color: var(--green-color);
+}
+
+.bg-green {
+  background-color: var(--green-color);
+}
+
+.text-green {
+  color: var(--green-color);
+}
+
+.btn-green-now {
+  border: 1px solid var(--green-color);
+  color: black;
+  background-color: var(--white-color);
+}
+
+.btn-send {
+  background-color: var(--green-color);
+}
+.bg-light-green {
+  background-color: var(--light-green-color);
+}
+.btn-outline-olive {
+  border: 1px solid var(--green-color);
+  color: var(--green-color);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.btn-outline-olive:hover {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-green {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-green:hover {
+  color: #000000;
+  background-color: var(--white-color);
+  transition: 0.3s ease;
+  border: 1px solid var(--green-color);
+}
+.btn-green-now:hover {
+  background-color: var(--green-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+.arrow-course-details {
+  color: var(--green-color);
+}
+
+.soapFlavors {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+}
+
+.soapContent {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.soapFlavorsImg {
+  position: relative;
+  z-index: -1;
+  margin-top: -80px;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .soapContent {
+    position: static;
+    padding: 2rem;
+    background-color: #f5f7ec;
+  }
+}
+
+.custom-border {
+  box-shadow: 5px 5px 26px 12px rgba(0, 0, 0, 0.44);
+  border: 2px solid var(--white-color);
+}
+
+.contact-section {
+  padding: 80px 0;
+  color: #555;
+  background-color: var(--white-color);
+}
+
+.contact-title {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border: none;
+  border-radius: 0;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+}
+
+textarea.form-control {
+  height: 200px;
+}
+
+.btn-send {
+  background-color: #8e9e44;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 40px;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  background-color: #7a8a3a;
+  color: white;
+}
+
+.info-label {
+  font-weight: bold;
+  color: #000;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+:root {
+  --footer-bg: #8ba342;
+  --footer-text: #ffffff;
+  --footer-text-muted: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.custom-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 60px 0 30px 0;
+}
+
+.footer-heading {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: var(--footer-text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+  font-size: 0.95rem;
+}
+
+.footer-bottom-links a {
+  color: var(--footer-text-muted);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-bottom-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .custom-footer {
+    text-align: center;
+  }
+
+  .brand-logos,
+  .social-icons {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    margin-top: 10px;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .soapFlavors img {
+    height: 900px !important;
+  }
+
+  body {
+    font-family: "LATO", sans-serif;
+    overflow-x: hidden;
+  }
+
+  .hero {
+    width: 100%;
+    background-image: url("/assets/Banner.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.hero {
+  min-height: 85vh;
+   background-image: url("/assets/Banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.nav-link:hover{
+
+  text-decoration: underline;
+}
